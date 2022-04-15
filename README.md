@@ -17,6 +17,7 @@ Requirements
   A passion for learning how to build web applications
 
 Description
+
   ***Course has now been updated for .Net 6.0 and React 17***
 
   Have you learnt the basics of ASP.NET Core and React? Not sure where to go next? This course should be able to help with that. In this course we learn how to build a multi-project ASP.NET Core solution that is built using Clean Architecture and the CQRS and Mediator pattern that makes our code easy to understand, reason about and extend.

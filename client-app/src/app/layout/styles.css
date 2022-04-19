@@ -12,6 +12,10 @@ body {
   box-shadow: 1px solid #d4d4d5;
 }
 
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
 /*home page styles*/
 
 .masthead {

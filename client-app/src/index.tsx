@@ -9,22 +9,19 @@ import App from './app/layout/App';
 import reportWebVitals from './reportWebVitals';
 import { store, StoreContext } from './app/stores/store';
 import { BrowserRouter, Router } from 'react-router-dom';
-import {createBrowserHistory} from 'history';
+import { createBrowserHistory } from 'history';
 
 export const history = createBrowserHistory();
 
-ReactDOM.render(
+ReactDOM.render( 
   <StoreContext.Provider value={store}>
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <App />
-    </BrowserRouter>
-
-    {/* <Router history={history}>
+    </BrowserRouter>*/}
+    <Router history={history}>
       <App />
-    </Router> */}
-
-
-  </StoreContext.Provider>,  
+    </Router>
+  </StoreContext.Provider>,
   document.getElementById('root')
 );
 

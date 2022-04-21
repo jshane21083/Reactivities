@@ -13,8 +13,9 @@ import NotFound from '../../features/Errors/NotFound';
 import ServerError from '../../features/Errors/ServerError';
 import LoginForm from '../../features/users/LoginForm';
 import { useStore } from '../stores/store';
-import LoadingComponent from './LoadingComponents';
 import ModalContainer from '../common/modals/modalContainer';
+import ProfilePage from '../../features/profiles/ProfilePage';
+import LoadingComponent from './LoadingComponent';
 
 function App() {
   const location = useLocation();
@@ -45,6 +46,7 @@ function App() {
                 <Route path='/activities' exact component={ActivityDashboard} />
                 <Route path='/activities/:id' component={ActivityDetails} />
                 <Route key={location.key} path={['/createActivity', '/manage/:id']} component={ActivityForm} />
+                <Route path='/profiles/:username' component={ProfilePage} />
                 <Route path='/errors' component={TestErrors} />
                 <Route path='/server-error' component={ServerError} />
                 <Route path='/login' component={LoginForm} />
